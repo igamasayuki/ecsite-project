@@ -1,0 +1,39 @@
+〇必要なものの作成
+　DB名、Gitbucket or GitHubのリポジトリ名、Trelloのチーム名、STSプロジェクト名は以下で統一してください。
+
+　Aチーム … ec-yyyyMMa
+　Bチーム … ec-yyyyMMb
+　Cチーム … ec-yyyyMMc
+
+
+　例)2019年4月入社のAチームなら
+　　　ec-201904a
+
+　DBは各自作成してください。
+　それ以外はチームで1名担当を決めてその人が作成してください。
+　また、チームのメンバー及び「igamasayuki」をGitHubのコラボレーター&Trelloのメンバーに入れてください
+
+○spring starter projectの作成
+　・ルートパッケージはjp.co.example.ecommerce_aとする(aはチーム名)
+
+　・プロジェクトに各パッケージの作成
+　　domain
+   service
+   form
+   controller
+   repository
+　　※Javaのパッケージは空っぽの状態だとpushすることができません。
+　　package-info.javaというファイルを作成しその中に以下を書いて保存しておくようにしてください。
+　　※package-info.javaはpackageを作成する際にチェックボックスにチェックを入れることで一緒に作ることができます。
+
+　・git initや.gitignoreの作成も忘れずに行う
+
+○spring starter projectのpush
+　・今作成したプロジェクトをリモートリポジトリにpushする
+　・push後、リモートリポジトリ上でdevelopブランチを作成しておく
+
+　※pushする際にSSHからみのエラーが出た場合は以下を１回だけ実行してください
+　 git config --global http.sslVerify false
+　 ↑SSHの鍵がなくてもpushできるように設定変更
+
+○各自developブランチをcloneして開発環境を整える
