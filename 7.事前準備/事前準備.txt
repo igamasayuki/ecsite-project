@@ -9,9 +9,12 @@
 　例)2019年4月入社のAチームなら
 　　　ec-201904a
 
+  ※Macでのデータベースの作り方
+  $ createdb -E UTF8 -T template0 --encoding=UTF8 --owner=postgres ec-201907a
+
 　DBは各自作成してください。
 　それ以外はチームで1名担当を決めてその人が作成してください。
-　また、チームのメンバー及び「igamasayuki」をGitHubのコラボレーター&Trelloのメンバーに入れてください
+　また、チームのメンバー及び「伊賀」をGitHubのコラボレーター(igamasayuki)&Trelloのメンバー(igamasayuki@gmail.com)に入れてください
 
 ○spring starter projectの作成
 　・ルートパッケージはjp.co.example.ecommerce_aとする(aはチーム名)
