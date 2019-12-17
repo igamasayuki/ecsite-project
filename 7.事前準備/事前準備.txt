@@ -1,9 +1,9 @@
 〇必要なものの作成
 　DB名、Gitbucket or GitHubのリポジトリ名、Trelloのチーム名、STSプロジェクト名は以下で統一してください。
 
-　Aチーム … ec_yyyyMMa
-　Bチーム … ec_yyyyMMb
-　Cチーム … ec_yyyyMMc
+　Aチーム … ec-yyyyMMa
+　Bチーム … ec-yyyyMMb
+　Cチーム … ec-yyyyMMc
 
 
 　例)2019年4月入社のAチームなら
