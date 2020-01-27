@@ -217,6 +217,7 @@ insert into toppings values(17, '男の子用下敷き', 200, 300);
 insert into toppings values(18, '女の子用下敷き', 200, 300);
 insert into toppings values(19, 'おもちゃ用ボタン電池4枚', 200, 300);
 insert into toppings values(20, 'おもちゃ携帯', 200, 300);
+insert into toppings values(21, 'ニンテンドーSwitch', 200, 300);
 
 
 -- 注文
