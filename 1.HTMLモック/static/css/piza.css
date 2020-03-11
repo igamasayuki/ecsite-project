@@ -27,3 +27,7 @@ span#total-price {
 .item-list-table{
 	table-layout: fixed;
 }
+
+th{
+	text-align: center;
+}
