@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+/* ========================================
+    商品一覧ページのスタイル
+   ======================================== */
+
+/* ========================================
+    top-wrapperの設定
+   ======================================== */
+.top-wrapper {
+  padding: 180px 0 100px 0; /* 上はヘッダが来るのでその分180px分空ける */
+  background-image: url(../img/hawaii_top.jpeg); /* 背景画像設定 */
+  background-size: cover; /*画像の縦横比を崩すことなく、画像ができるだけ大きくなるよう拡大縮小*/
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9; /* 文字の透明度を指定 */
+  font-size: 45px;
+  letter-spacing: 5px; /* 文字の間隔を設定 */
+}
+
+.top-wrapper p {
+  opacity: 0.7; /* 文字の透明度を指定 */
+}
+
+.btn-wrapper {
+  text-align: center; /* ボタン群の配置を真ん中揃えにする */
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  display: inline-block; /*ボタンはa要素(インライン要素)のため widhやheightは指定できない。またmarginやpaddingは横のみしか指定できない。今回padding指定したいためにインラインブロック要素に変更する */
+  padding: 8px 24px; /* 上記でインラインブロック要素に下ので上下のpaddingが設定できる */
+  color: white;
+  opacity: 0.8; /* 透明度の設定 */
+  border-radius: 4px; /* ボタンの角を丸くする */
+  text-align: center; /* ボタン名を中央揃えに */
+}
+
+.btn:hover {
+  opacity: 1; /* マウスを乗せた時は透明度をなくす 1:不透明 */
+}
+
+/* fontawesome(facebook＆twitterアイコンの設定) */
+.fab {
+  margin-right: 10px;
+}
+
+/* ========================================
+    top-item-wrapperの設定
+   ======================================== */
+
+.top-item-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.top-items {
+  display: flex;
+}
+/* .item {
+  float: left;
+  width: 25%;
+}
+
+.clear {
+  clear: left;
+} */
+
+.top-item {
+  margin: 30px;
+}
+.top-item-icon {
+  position: relative; /* p要素を重ねるための指定(absoluteと組み合わせて使う) */
+}
+
+.top-item-icon p {
+  position: absolute; /* item-iconからpを位置指定するための指定 */
+  top: 35%;
+  width: 100%;
+  color: red;
+}
+
+.top-item-icon img {
+  border-radius: 30px; /* 画像を角丸にする */
+  width: 200px;
+  height: 200px;
+}
+
+/* ========================================
+    message-wrapperの設定
+   ======================================== */
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer; /* a要素のようにマウスの乗せるとa要素のようにポインタが変わる */
+  box-shadow: 1px 5px #1a7940; /* ボタンに影をつける 右1px 下5px */
+}
+
+/* メッセージクリック時の挙動の設定 */
+.message:active {
+  position: relative; /* messageクラスから位置を指定したいため(これがないとページの左上からの位置指定になりうまくボタンが動かない) */
+  top: 5px; /* ボタンを本来の位置よりも5px分下にずらす(上を5px空ける) */
+  left: 1px; /* ボタンを本来の位置よりも1px分右にずらす(左を1px空ける) */
+  box-shadow: none; /* 影をなくす(これがないと影ごと右下に動く) */
+}
+
+/* ========================================
+    item-wrapperの設定
+   ======================================== */
+
+.search-wrapper {
+  padding: 100px 0  50px 0; /*上はヘッダが来るのでその分180px分空ける*/
+  text-align: center;
+  position: fixed; /* スクロールしても表示されるように位置を固定 */
+  height: 65px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1; /* ヘッダが一番上に表示されるようにする(数が多いほど上に来る。例えば-1にするとヘッダが裏側に行き見えなくなります) */
+}
+
+.search-name-input {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  /* display: block; */
+  width: 30%;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  margin: 0;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+}
+
+.search-btn {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.item-wrapper {
+  padding-top: 200px; /* 上はヘッダや検索フォームが来るのでその分空ける */
+  padding-bottom: 80px;
+  padding-left: 15%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap; /* 表示内容が多かった時に自動的に複数行に分割される */
+}
+
+.item {
+  flex: 0 0 320px;
+  padding: 20px;
+}
+
+.item-icon img {
+  margin: auto;
+  display: block;
+  border-radius: 30px;
+  width: 200px;
+  height: 200px;
+  padding: 0 0 15px 0;
+}
+
+/* サイズをオレンジ〇で囲む */
+.price {
+  /* サイズ指定 */
+  background-color: #ff4500;
+  border-radius: 50%; /* 角丸にする設定 */
+}
