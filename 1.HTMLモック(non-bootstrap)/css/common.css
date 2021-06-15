@@ -4,16 +4,19 @@
     共通設定
    ======================================== */
 
+/* widthの合計にpaddingやborderが含まれるようになるのでレイアウト崩れを起こしにくくする */
 * {
-  box-sizing: border-box; /* widthの合計にpaddingやborderが含まれるようになるのでレイアウト崩れを起こしにくくする */
+  box-sizing: border-box;
 }
 
+/* ブラウザデフォルトのマージンをクリア */
 body {
-  margin: 0; /* ブラウザデフォルトのマージンをクリア */
+  margin: 0; 
 }
 
+/* リンクの下線や青字などの装飾をなくす */
 a {
-  text-decoration: none; /* リンクの下線や青字などの装飾をなくす */
+  text-decoration: none; 
 }
 
 /* コンテナ全体の設定 */
@@ -47,4 +50,3 @@ a {
   font-size: 13px;
   color: #b3aeb5;
 }
-
