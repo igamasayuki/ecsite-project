@@ -11,12 +11,12 @@
 
 /* ブラウザデフォルトのマージンをクリア */
 body {
-  margin: 0; 
+  margin: 0;
 }
 
 /* リンクの下線や青字などの装飾をなくす */
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* コンテナ全体の設定 */
