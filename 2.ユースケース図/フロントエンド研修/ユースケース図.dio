@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="yhsVRZaEURiXg1kSSNXG" name="ページ1">
-        <mxGraphModel dx="515" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="535" dy="405" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -25,7 +25,7 @@
                 <mxCell id="12" value="4.商品詳細を表示する(初級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="280" y="300" width="130" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="5.ショッピングカートから商品を削除する&lt;br&gt;(中級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="17" value="5.ショッピングカートから商品を削除する&lt;br&gt;(上級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="320" y="400" width="130" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="7.注文をする(上級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -67,7 +67,7 @@
                         <mxPoint x="270" y="424.99999999999994" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="15" value="5.ショッピングカートに商品を追加する&lt;br&gt;(中級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="15" value="5.ショッピングカートに商品を追加する&lt;br&gt;(上級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="300" y="350" width="130" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="" style="endArrow=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="16" edge="1">
@@ -112,7 +112,7 @@
                         <mxPoint x="230" y="435" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="16" value="5.ショッピングカートから商品を削除する&lt;br&gt;(中級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="16" value="5.ショッピングカートから商品を削除する&lt;br&gt;(上級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="180" y="400" width="130" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="6.注文確認画面を表示する(中級)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
