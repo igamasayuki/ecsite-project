@@ -28,6 +28,10 @@
     width: 100%;
   }
 
+  footer {
+  	text-align: right;
+  }
+  
   .btn {
     width: 100%;
   }
