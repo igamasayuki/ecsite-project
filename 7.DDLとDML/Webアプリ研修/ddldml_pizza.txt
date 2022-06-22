@@ -114,6 +114,7 @@ create table order_items (
   , order_id integer not null
   , quantity integer not null
   , size varchar(1)
+  , FOREIGN KEY (order_id) REFERENCES orders (id)
 ) ;
 
 -- 注文トッピング
@@ -123,4 +124,5 @@ create table order_toppings (
   id serial primary key
   , topping_id integer not null
   , order_item_id integer not null
+  , FOREIGN KEY (order_item_id) REFERENCES order_items (id) on delete cascade
 ) ;
