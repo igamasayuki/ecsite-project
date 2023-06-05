@@ -7,7 +7,9 @@ create table users (
  , email varchar(100) not null unique
  , password text not null
  , zipcode varchar(8) not null
- , address varchar(200) not null
+ , pref varchar(10) not null
+ , municipalities varchar(10) not null
+ , address varchar(20) not null
  , telephone varchar(15) not null
 ) ;
 
@@ -99,7 +101,9 @@ create table orders (
   , destination_name varchar(100)
   , destination_email varchar(100)
   , destination_zipcode varchar(8)
-  , destination_address varchar(200)
+  , destination_pref varchar(10) not null
+  , destination_municipalities varchar(10) not null
+  , destination_address varchar(20) not null
   , destination_tel varchar(15)
   , delivery_time timestamp
   , payment_method integer
