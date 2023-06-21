@@ -1,36 +1,4 @@
--- ユーザー
-drop table if exists users cascade;
-
-create table users (
- id serial primary key
- , name varchar(100) not null
- , email varchar(100) not null unique
- , password text not null
- , zipcode varchar(8) not null
- , pref varchar(10) not null
- , municipalities varchar(10) not null
- , address varchar(20) not null
- , telephone varchar(15) not null
-) ;
-
-
---ユーザー登録(pass:morimori)
-insert into users(name, email, password, zipcode, address, telephone) values('テストユーザ', 'test@test.co.jp', '$2a$10$Utoo6nr3XIFEh4xOZ9Zr1.n/PtEYBb8HhlLDDklaJwsj.T3uux4kq','1111111', 'テスト住所', 'テスト電話番号');
-
 -- 商品
-drop table if exists items cascade;
-
-create table items (
-  id integer primary key
-  , name text not null
-  , description text not null
-  , price_m integer not null
-  , price_l integer not null
-  , image_path text not null
-  , deleted boolean default false not null
-) ;
-
-
 insert into items values(1, 'ビニールプール', '製品サイズ:(約)幅157×奥行157×高さ122cm
 材質:塩化ビニル樹脂(非フタル酸系可塑剤使用)
 水量目安:高さ22cmまで入れて295L
@@ -147,17 +115,7 @@ insert into items values(18, 'おはじきシール ゆめかわDX', 'ゆめか�
 カードやお手紙などに貼ったりお友達と交換することで遊びが広がります。', 2700, 4050, '18.jpg');
 
 
-
 -- トッピング
-drop table if exists toppings cascade;
-
-create table toppings (
-  id integer primary key
-  , name text not null
-  , price_m integer not null
-  , price_l integer not null
-) ;
-
 insert into toppings values(1, '男の子用シール', 200, 300);
 insert into toppings values(2, '女の子用シール', 200, 300);
 insert into toppings values(3, 'AC電源ケーブル', 200, 300);
@@ -179,46 +137,3 @@ insert into toppings values(18, '女の子用下敷き', 200, 300);
 insert into toppings values(19, 'おもちゃ用ボタン電池4枚', 200, 300);
 insert into toppings values(20, 'おもちゃ携帯', 200, 300);
 insert into toppings values(21, 'ニンテンドーSwitch', 200, 300);
-
-
--- 注文
-drop table if exists orders cascade;
-
-create table orders (
-  id serial primary key
-  , user_id integer not null
-  , status integer not null
-  , total_price integer not null
-  , order_date date
-  , destination_name varchar(100)
-  , destination_email varchar(100)
-  , destination_zipcode varchar(8)
-  , destination_pref varchar(10) not null
-  , destination_municipalities varchar(10) not null
-  , destination_address varchar(20) not null
-  , destination_tel varchar(15)
-  , delivery_time timestamp
-  , payment_method integer
-  ) ;
-
--- 注文商品
-drop table if exists order_items cascade;
-
-create table order_items (
-  id serial primary key
-  , item_id integer not null
-  , order_id integer not null
-  , quantity integer not null
-  , size varchar(1)
-  , FOREIGN KEY (order_id) REFERENCES orders (id) on delete cascade
-) ;
-
--- 注文トッピング
-drop table if exists order_toppings cascade;
-
-create table order_toppings (
-  id serial primary key
-  , topping_id integer not null
-  , order_item_id integer not null
-  , FOREIGN KEY (order_item_id) REFERENCES order_items (id) on delete cascade
-) ;

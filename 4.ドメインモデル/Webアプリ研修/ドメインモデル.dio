@@ -1,0 +1,151 @@
+<mxfile host="app.diagrams.net" modified="2023-06-21T01:08:28.850Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" version="21.1.8" etag="Xii5l6GICBgl6vxDU0u7" type="device">
+  <diagram id="YzUfFdk7xmTB6KieiWr1" name="ページ1">
+    <mxGraphModel dx="1194" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="11" value="name" style="endArrow=block;endFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;sketch=0;shadow=0;rounded=1;labelBackgroundColor=#ffffff;noLabel=1;fontColor=none;html=1;" parent="1" source="7" target="3" edge="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="230" y="210" as="sourcePoint" />
+            <mxPoint x="390" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fillColor=#FFFF00;" parent="11" connectable="0" vertex="1">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="User(ユーザー)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="30" y="50" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="- id : Integer&#xa;- name(名前) : String &#xa;- email(Eメール) : String&#xa;- password(パスワード) : String&#xa;- zipcode(郵便番号) : String&#xa;- prefecture(都道府県) : String&#xa;- municipalities(市区町村) : String&#xa;- address(住所) : String&#xa;- telephone(電話番号) : String&#xa;" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+          <mxGeometry y="26" width="190" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="2" vertex="1">
+          <mxGeometry y="160" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
+          <mxGeometry y="168" width="190" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Order(注文)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="50" width="290" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="- id : Integer&#xa;- userId(ユーザーID) : Integer &#xa;- status(状態) : Integer&#xa;- totalPrice(合計金額) : Integer&#xa;- orderDate(注文日) : java.util.Date&#xa;- distinationName(宛先氏名) : String&#xa;- distinationEmail(宛先Eメール) : String&#xa;- distinationZipcode(宛先郵便番号) : String&#xa;- distinationPrefecture(宛先都道府県) : String&#xa;- distinationMunicipalities(宛先郵便番号) : String&#xa;- distinationAddress(宛先住所) : String&#xa;- distinationTel(宛先電話番号) : String&#xa;- deliveryTime(配達日時) : java.sql.Timestamp&#xa;- paymentMethod(支払い方法) : Integer&#xa;- orderItemList(注文商品リスト) : List" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="6" vertex="1">
+          <mxGeometry y="26" width="290" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="6" vertex="1">
+          <mxGeometry y="240" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="+ getTax():int&#xa;+ getCalcTotalPrice():int&#xa;" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="6" vertex="1">
+          <mxGeometry y="248" width="290" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="OrderItem(注文商品)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="400" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="- id : Integer&#xa;- itemId(商品ID) : Integer &#xa;- orderId(注文ID) : Integer&#xa;- quantity(数量) : Integer&#xa;- size(サイズ) : Character&#xa;- item(商品) : Item&#xa;- orderToppingList(注文トッピングリスト) : List" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="13" vertex="1">
+          <mxGeometry y="26" width="290" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="13" vertex="1">
+          <mxGeometry y="140" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="+ getCalcSubTotalPrice():int" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="13" vertex="1">
+          <mxGeometry y="148" width="290" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=openThin;startFill=0;fillColor=#FFFF00;" parent="1" source="13" edge="1" target="9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="390" as="sourcePoint" />
+            <mxPoint x="435" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=openThin;startFill=0;fillColor=#FFFF00;" parent="1" source="19" edge="1" target="16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="441" y="700" as="sourcePoint" />
+            <mxPoint x="435" y="592" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="OrderTopping(注文トッピング)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="290" y="660" width="290" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="- id : Integer&#xa;- toppingId(トッピングID) : Integer&#xa;- orderItemId(注文商品ID) : Integer&#xa;- topping(トッピング) : Topping" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="19" vertex="1">
+          <mxGeometry y="26" width="290" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="19" vertex="1">
+          <mxGeometry y="90" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="19" vertex="1">
+          <mxGeometry y="98" width="290" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="Item(商品)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="10" y="400" width="230" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="- id : Integer&#xa;- name(名前) : String&#xa;- discription(説明) : String&#xa;- priceM(Mの価格) : Integer&#xa;- priceL(Lの価格) : Integer&#xa;- imagePath(画像パス) : String&#xa;- deleted(削除フラグ) : Boolean&#xa;- toppingList(トッピングリスト) : List" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="29" vertex="1">
+          <mxGeometry y="26" width="230" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;exitX=-0.011;exitY=0.602;exitDx=0;exitDy=0;exitPerimeter=0;noLabel=1;fontColor=none;" parent="29" source="14" edge="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="260" y="100" as="sourcePoint" />
+            <mxPoint x="230" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fillColor=#FFFF00;" parent="41" connectable="0" vertex="1">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="29" vertex="1">
+          <mxGeometry y="150" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="29" vertex="1">
+          <mxGeometry y="158" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="Topping(トッピング)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#FFFF00;" parent="1" vertex="1">
+          <mxGeometry x="10" y="660" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="36" value="- id : Integer&#xa;- name(名前) : String&#xa;- priceM(Mの価格) : Integer&#xa;- priceL(Lの価格) : Integer&#xa;" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="35" vertex="1">
+          <mxGeometry y="26" width="230" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="37" value="" style="line;strokeWidth=1;fillColor=#FFFF00;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="35" vertex="1">
+          <mxGeometry y="100" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="38" value="" style="text;strokeColor=none;fillColor=#FFFF00;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="35" vertex="1">
+          <mxGeometry y="108" width="230" height="12" as="geometry" />
+        </mxCell>
+        <mxCell id="46" value="name" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;entryX=1.001;entryY=0.38;entryDx=0;entryDy=0;entryPerimeter=0;noLabel=1;fontColor=none;" parent="1" target="36" edge="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="290" y="714" as="sourcePoint" />
+            <mxPoint x="220" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="47" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=bottom;fillColor=#FFFF00;" parent="46" connectable="0" vertex="1">
+          <mxGeometry x="-1" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;startArrow=openThin;startFill=0;fillColor=#FFFF00;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" edge="1" target="32" source="35">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="120" y="660" as="sourcePoint" />
+            <mxPoint x="120" y="602" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="54" value="" style="swimlane;startSize=0;fontColor=none;fillColor=#FFCCFF;" parent="1" vertex="1">
+          <mxGeometry x="620" y="50" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="status&lt;br&gt;0:注文前&lt;br&gt;1:未入金&lt;br&gt;&lt;div&gt;&lt;span&gt;2:入金済&lt;/span&gt;&lt;/div&gt;3:発送済&lt;br&gt;4:配送完了&lt;br&gt;9:キャンセル&lt;br&gt;&lt;br&gt;余裕があればEnumで実装する" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=none;" parent="54" vertex="1">
+          <mxGeometry y="15" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;shadow=0;labelBackgroundColor=#ffffff;fontColor=none;fillColor=#FFFF00;entryX=1.003;entryY=0.21;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="55" edge="1" target="7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="180" as="sourcePoint" />
+            <mxPoint x="580" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="58" value="" style="swimlane;startSize=0;fontColor=none;fillColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="620" y="239" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="paymentMethod&lt;br&gt;1:代金引換&lt;br&gt;2:クレジットカード&lt;br&gt;&lt;br&gt;余裕があればEnumで実装する" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=none;" parent="58" vertex="1">
+          <mxGeometry y="10" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="60" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;shadow=0;labelBackgroundColor=#ffffff;fontColor=none;entryX=-0.001;entryY=0.463;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="7" target="59" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="594.6400000000001" y="131.154" as="sourcePoint" />
+            <mxPoint x="630" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
