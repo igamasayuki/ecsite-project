@@ -1,0 +1,39 @@
+-- 商品
+insert into items values(1, '4Kスマートテレビ', '最新技術を搭載した4Kスマートテレビ。鮮明な画質と豊富なインターネット機能を備え、あらゆるエンターテイメントが楽しめます。', 149000, 257000, '1.jpg');
+insert into items values(2, '冷蔵庫', '省エネ性能に優れた大容量冷蔵庫。新鮮な食材を長持ちさせるための最適な温度管理機能を搭載しています。', 149000, 257000, '2.jpg');
+insert into items values(3, 'エアコン', '静かでパワフルな冷暖房を実現するエアコン。エネルギー効率の高い設計で、一年中快適な室温を提供します。', 149000, 257000, '3.jpg');
+insert into items values(4, '洗濯機', '大容量で省エネ型の洗濯機。衣類を傷めずに効率的に洗浄するための多彩なコースが特徴です。', 190000, 298000, '4.jpg');
+insert into items values(5, '掃除機', '強力な吸引力を持つ掃除機。軽量で扱いやすく、家中の清掃をサポートします。', 19000, 29800, '5.jpg');
+insert into items values(6, '電子レンジ', '解凍から温め、調理までこなす多機能電子レンジ。使いやすさと機能性を兼ね備えています。', 27000, 40500, '6.jpg');
+insert into items values(7, 'コーヒーメーカー', '手軽に本格的なコーヒーが楽しめるコーヒーメーカー。朝の忙しい時間でも素早く美味しい一杯を提供します。', 25700, 37800, '7.jpg');
+insert into items values(8, '電気ケトル', '素早くお湯を沸かすことができる電気ケトル。デザイン性と機能性を兼ね備えた製品です。', 21600, 33800, '8.jpg');
+insert into items values(9, 'ヘアドライヤー', '髪を傷めずに速乾できるヘアドライヤー。軽量で使いやすいデザインが魅力です。', 27000, 40500, '9.jpg');
+insert into items values(10, 'ブレンダー', 'スムージーやスープ作りに便利なブレンダー。高速で滑らかな仕上がりを実現します。', 21600, 33800, '10.jpg');
+insert into items values(11, 'トースター', 'パンを美味しく焼き上げるトースター。外はカリッと中はふんわり、理想のトーストが楽しめます。', 27000, 40500, '11.jpg');
+insert into items values(12, '空気清浄機', '静音性に優れ、空気中の花粉やホコリを効率良く除去する空気清浄機。快適な室内環境を作り出します。', 21600, 33800, '12.jpg');
+insert into items values(13, '電気ストーブ', 'コンパクトで場所を取らず、素早く部屋を温める電気ストーブ。安全性にも配慮した設計です。', 21600, 33800, '13.jpg');
+insert into items values(14, '電動歯ブラシ', '歯垢を効率的に除去する電動歯ブラシ。歯ぐきへの優しさと清潔感を両立させた製品です。', 29800, 44600, '14.jpg');
+insert into items values(15, 'ワイヤレスイヤホン', '高品質な音質と使い勝手の良さで、日常の音楽体験を格上げするワイヤレスイヤホン。', 24400, 36500, '15.jpg');
+insert into items values(16, 'タブレット', '軽量で高性能なタブレット。仕事でもプライベートでも活躍する多機能性を持ち合わせています。', 27000, 40500, '16.jpg');
+insert into items values(17, 'ゲーミングモニター', '高解像度と高リフレッシュレートを誇るゲーミングモニター。ゲームプレイをよりリアルで快適なものにします。', 24400, 36500, '17.jpg');
+insert into items values(18, 'スマートウォッチ', '健康管理からスケジュール管理までこなすスマートウォッチ。日常生活を便利にサポートします。', 27000, 40500, '18.jpg');
+
+-- トッピング
+insert into toppings values(1, '追加バッテリー', 200, 300);
+insert into toppings values(2, '保護フィルム', 200, 300);
+insert into toppings values(3, 'カメラレンズ', 200, 300);
+insert into toppings values(4, 'ポータブルケース', 200, 300);
+insert into toppings values(5, 'SDカード', 200, 300);
+insert into toppings values(6, 'USBケーブル', 200, 300);
+insert into toppings values(7, 'ワイヤレスチャージャー', 200, 300);
+insert into toppings values(8, 'スタンド', 200, 300);
+insert into toppings values(9, 'キーボード', 200, 300);
+insert into toppings values(10, 'Gorgeousマウス', 200, 300);
+insert into toppings values(11, 'イヤホンジャックSpecial', 200, 300);
+insert into toppings values(12, '外部スピーカー', 200, 300);
+insert into toppings values(13, '車載ホルダー', 200, 300);
+insert into toppings values(14, 'スクリーンクリーナー', 200, 300);
+insert into toppings values(15, 'ストラップ', 200, 300);
+insert into toppings values(16, 'ノートPCクーラー', 200, 300);
+insert into toppings values(17, 'グラフィックカード', 200, 300);
+insert into toppings values(18, 'メモリアップグレード', 200, 300);
